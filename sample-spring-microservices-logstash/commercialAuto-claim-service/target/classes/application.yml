@@ -1,0 +1,20 @@
+server:  
+  port: ${PORT:4444}
+spring:  
+  application:
+    name: commercialAuto-claim-service
+  zipkin:
+    base-url: http://192.168.1.7:9411
+
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000      
+  eureka:
+    enabled: true

@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zipkin-server
+server:  
+  port: 9411
+#spring.sleuth.enabled=false
+
+#spring.sleuth.sampler.percentage=1 
+zipkin:
+  storage:
+    StorageComponent: elasticsearch
+    type: elasticsearch
+    elasticsearch: 
+      hosts: 198.168.1.7:9200
+      #cluster: elasticsearch
+      index: zipkin
+ 
+#zipkin.storage.elasticsearch.hosts=127.0.0.1:9200
+#zipkin.storage.elasticsearch.cluster=elasticsearch
+#zipkin.storage.elasticsearch.index=zipkin
+#zipkin.storage.elasticsearch.index-shards=5
+#zipkin.storage.elasticsearch.index-replicas=1
+ 
