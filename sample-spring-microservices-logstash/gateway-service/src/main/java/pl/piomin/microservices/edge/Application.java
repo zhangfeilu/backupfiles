@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.SpringApplication;
 
 @SpringBootApplication
 @EnableZuulProxy
@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Application {
 
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(Application.class).web(true).run(args);
+		//new SpringApplicationBuilder(Application.class).web(true).run(args);
+		 SpringApplication.run(Application.class, args);
 	}
 
 	@Bean

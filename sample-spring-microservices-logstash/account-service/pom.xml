@@ -6,7 +6,7 @@
 		<artifactId>sample-spring-microservices</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>commercialAuto-service</artifactId>
+	<artifactId>commercialAuto-policy-service</artifactId>
 
 	<dependencies>
 		<dependency>
@@ -48,10 +48,15 @@
 			<artifactId>logback-core</artifactId>
 			<version>1.2.3</version>
 		</dependency>
+				<dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.13</version>
+      </dependency>		
 	</dependencies>
 
 	<build>
-		<finalName>account-service</finalName>
+		<finalName>commercialAuto-policy-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

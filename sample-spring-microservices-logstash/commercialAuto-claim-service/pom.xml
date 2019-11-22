@@ -55,6 +55,11 @@
 			<artifactId>logback-core</artifactId>
 			<version>1.2.3</version>
 		</dependency>
+				<dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.13</version>
+      </dependency>		
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -62,4 +67,24 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  	<build>
+		<finalName>commercialAuto-claim-service</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>org.commercialAuto.claim.service.Application</mainClass>
+					<addResources>true</addResources>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

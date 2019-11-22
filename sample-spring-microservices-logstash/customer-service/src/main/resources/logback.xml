@@ -9,7 +9,7 @@
 
 	<appender name="STASH"
 		class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-		<destination>192.168.1.7:5000</destination>
+		<destination>127.0.0.1:5000</destination>
 
 		<encoder
 			class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
@@ -23,7 +23,7 @@
 				<pattern>
 					<pattern>
 						{
-						"serviceName": "validation-service"
+						"service-name": "validation-service"
 						}
 					</pattern>
 				</pattern>

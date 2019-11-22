@@ -4,7 +4,7 @@ spring:
   application:
     name: commercialAuto-claim-service
   zipkin:
-    base-url: http://192.168.1.7:9411
+    base-url: http://127.0.0.1:9411
 
 eureka:  
   client:

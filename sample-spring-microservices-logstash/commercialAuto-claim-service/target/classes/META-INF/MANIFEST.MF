@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: commercialAuto-claim-service
 Implementation-Version: 1.0-SNAPSHOT
-Built-By: Administrator
+Built-By: mzhang294
 Implementation-Vendor-Id: pl.piomin
-Build-Jdk: 1.8.0_202
+Build-Jdk: 1.8.0_161
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 
