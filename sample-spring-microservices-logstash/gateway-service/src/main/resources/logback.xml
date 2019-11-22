@@ -15,15 +15,15 @@
 			class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
 			<providers>
 				<mdc /> <!-- MDC variables on the Thread will be written as JSON fields -->
-				<context /> <!--Outputs entries from logback's context -->
-				<version /> <!-- Logstash json format version, the @version field in the output -->
+				<!-- <context /> --> <!--Outputs entries from logback's context -->
+				<!-- <version /> --> <!-- Logstash json format version, the @version field in the output -->
 				<logLevel />
 				<loggerName />
 
 				<pattern>
 					<pattern>
 						{
-						"service-name": "gateway-server"
+						"servicename": "gateway-server"
 						}
 					</pattern>
 				</pattern>
